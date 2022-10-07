@@ -1,0 +1,150 @@
+.stylergb {
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    animation: stylergb 2s infinite;
+}
+
+.heading-container .navegacao ul {
+    display: flex;
+}
+
+.heading-container .navegacao ul li {
+    margin: 15px;
+    padding: 15px;
+}
+
+.heading-container .navegacao ul li a {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+.heading-container .navegacao ul li a:hover {
+    color: rgb(18, 12, 102);
+    border: 1px solid white;
+    border-radius: 10px;
+    animation: stylergb 2s infinite;
+}
+
+/* responsivo */
+
+.heading-container .navegacao input {
+    display: none;
+}
+
+.heading-container .navegacao .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.heading-container .navegacao label {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-container .hamburguer {
+    background-color: rgb(14, 12, 11);
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.heading-container .hamburguer::before,
+.heading-container .hamburguer::after {
+    background-color: rgb(12, 12, 12);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.heading-container .hamburguer::before {
+    top: -10px;
+}
+
+.heading-container .hamburguer::after {
+    bottom: -10px;
+}
+
+.heading-container input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.heading-container input:checked~label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.heading-container input:checked~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .heading-container .navegacao .menu {
+        display: block;
+    }
+
+    .heading-container .navegacao ul {
+        display: none;
+    }
+
+    .heading-container input:checked~ul {
+        display: block;
+    }
+    .heading-container .navegacao{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1;
+    }
+    .heading-container .navegacao ul{
+        width: 200px;
+              
+    }
+    .heading-container .navegacao ul a{
+        text-align: start;
+        padding: 20px;
+        display: block;
+        border-radius: 5px;
+        background-color: rgb(206, 196, 184);
+    }
+
+}
+@keyframes stylergb {
+    0% {
+        border: 1px solid rgb(219, 9, 9);
+        box-shadow: 5px 5px 5px rgb(241, 19, 19);
+    }
+
+    25% {
+        border: 1px solid rgb(221, 245, 7);
+        box-shadow: 5px 5px 5px rgb(221, 245, 7);
+    }
+
+    50% {
+        border: 1px solid rgb(19, 226, 71);
+        box-shadow: 5px 5px 5px rgb(49, 240, 24);
+    }
+
+    75% {
+        border: 1px solid rgb(14, 102, 235);
+        box-shadow: 5px 5px 5px rgb(17, 104, 235);
+    }
+
+    100% {
+        border: 1px solid rgb(230, 18, 230);
+        box-shadow: 5px 5px 5px rgb(162, 17, 230);
+    }
+
+}
