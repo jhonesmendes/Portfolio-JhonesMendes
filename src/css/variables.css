@@ -1,4 +1,5 @@
 :root{
-
-    --padrao-rgb: background: linear-gradient(red, yellow);
+    --cor-text-padrao: #fff;
+    --cor-text-secudaria: rgb(23, 223, 57);
+    --cor-rgb: red, black, blue ;
 }

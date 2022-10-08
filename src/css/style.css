@@ -2,7 +2,7 @@
 
 body {
     animation: stylergb 1s infinite;
-    background: url(../images/abstract-futuristic-background-with-3d-design.jpg) no-repeat;
+    background: url(../images/Animação.gif);
     font-family: 'Source Serif Pro', serif;
 }
 
@@ -18,18 +18,19 @@ body {
 .introduce {
     height: 420px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .introduce .title-name {
     font-size: 80px;
-    color: #fff;
+    color: var(--cor-text-padrao);
 }
 
 .introduce .title-text {
     font-size: 24px;
-    color: #fff;
+    color: var(--cor-text-padrao);
 }
 
 .introduce img {
@@ -40,6 +41,7 @@ body {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -53,7 +55,7 @@ body {
 .about h2 {
     padding: 15px;
     font-size: 36px;
-    color: #fff;
+    color: var(--cor-text-padrao);
     animation: stylergb 1s infinite;
 }
 
@@ -62,56 +64,65 @@ body {
     font-size: 23px;
     line-height: 35px;
     text-align: justify;
-    color: white;
+    color: var(--cor-text-padrao);
     animation: stylergb 1s infinite;
 }
 
 .about .photo {
     height: 100%;
     width: 500px;
+
 }
 
 
 /*  habilidades ainda nao tenho ideia 
     fazer efeito cascata para o lado tipo cod
 */
+
+
 .title-hero{
-    color: #fff;
+    color: var(--cor-text-padrao);
     text-align: center;
     font-size: 30px;
     margin: 75px 0 50px;
 }
-.painting-hero {
+.painting-hero{
     display: flex;
-    position: relative;
-    height: 500px;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
 }
 
 .painting-hero .hero{
-    display: none;
-}
-
-.painting-hero .hero-inicial{
-    position: absolute;
-    background-color: rgb(162, 240, 28);
     height: 450px;
     width: 300px;
     border: 1px solid;
+    animation: stylergb 3s infinite;
+    text-align: center;
+    padding: 15px;
+    margin: 15px ;
 }
 
- /*  add duas classe para poder separa os slide */ 
+.painting-hero .hero a .fab{
+    font-size: 55px;
+    color: var(--cor-text-padrao);
+}
+.painting-hero .hero h3{
+    font-size: 45px;
+    margin: 15px;
+    color: var(--cor-text-padrao);
+}
 
-
+.painting-hero .hero p{
+    font-size: 18px;
+    color: var(--cor-text-padrao);
+}
 
 /*  projetos */
+
 .list-projects {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 100%;
-    margin-top: 15px;
 }
 
 
