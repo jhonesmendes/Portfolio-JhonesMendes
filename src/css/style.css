@@ -87,9 +87,11 @@ body {
     margin: 75px 0 50px;
 }
 .painting-hero{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:repeat(3, 0fr);
+    grid-template-rows: 1fr;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 25px;
 }
 
@@ -100,7 +102,7 @@ body {
     animation: stylergb 3s infinite;
     text-align: center;
     padding: 15px;
-    margin: 15px ;
+    margin: 35px ;
 }
 
 .painting-hero .hero a .fab{
