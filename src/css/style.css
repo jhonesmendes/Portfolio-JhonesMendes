@@ -56,7 +56,7 @@ body {
 
 .about p {
     padding: 25px;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 35px;
     text-align: justify;
     color: var(--cor-text-padrao);
@@ -193,7 +193,7 @@ body {
 } 
 
 .social-network a{
-    padding: 25px;
+    padding: 10px;
     font-size: 50px;
 
 }
