@@ -10,14 +10,14 @@
 }
 
 .heading-container .navegacao ul li {
-    margin: 15px;
-    padding: 15px;
+    margin: 13px;
+    padding: 13px;
 }
 
 .heading-container .navegacao ul li a {
     font-weight: 500;
-    font-size: 25px;
-    padding: 10px 30px;
+    font-size: 18px;
+    padding: 9px 18px;
     transition: 0.3s;
 }
 
@@ -27,8 +27,6 @@
     border-radius: 10px;
     animation: stylergb 2s infinite;
 }
-
-/* responsivo */
 
 .heading-container .navegacao input {
     display: none;
@@ -47,7 +45,7 @@
 }
 
 .heading-container .hamburguer {
-    background-color: rgb(14, 12, 11);
+    background-color: rgb(13, 236, 61);
     position: relative;
     display: block;
     width: 30px;
@@ -59,7 +57,7 @@
 
 .heading-container .hamburguer::before,
 .heading-container .hamburguer::after {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(20, 241, 12);
     content: "";
     display: block;
     width: 100%;
@@ -109,17 +107,26 @@
         z-index: 1;
     }
     .heading-container .navegacao ul{
-        width: 200px;
-              
+        width: 200px;              
     }
+
     .heading-container .navegacao ul a{
         text-align: start;
         padding: 20px;
         display: block;
         border-radius: 5px;
-        background-color: rgb(206, 196, 184);
     }
 
+}
+@media (max-width: 576px) {
+    .heading-container .navegacao ul li {
+        padding: 5px;
+        margin: 1px;
+    }
+    .heading-container .navegacao ul {
+        width: 140px;
+        height: 40px;
+    }
 }
 @keyframes stylergb {
     0% {

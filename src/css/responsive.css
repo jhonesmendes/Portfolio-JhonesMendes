@@ -1,0 +1,88 @@
+@media (max-width: 900px){
+    .painting-hero{
+        grid-template-columns: repeat(2, 0fr);
+    }
+    .painting-hero .hero h3{
+        font-size: 35px;
+    }
+    .list-projects .quadro-projects{
+        grid-template-columns: 1fr;
+    }
+    .list-projects .quadro-projects .projects .projects-information{
+       width: 400px;
+    }
+
+
+}
+@media (max-width: 768px){
+    .introduce {
+        height:150px;  
+        margin-left: 20px;
+    }
+    .about{
+        padding: 2px;
+    }
+    .about .photo {
+        height: 50%;
+        width: 200px;
+    }
+    .introduce .title-name{
+        font-size: 45px;
+    }
+    .introduce .title-text {
+        font-size: 18px;
+    }
+    .about h2 {
+        font-size: 25px;
+    }
+    .about p{
+        font-size: 16px;
+    }
+    .painting-hero{
+        grid-template-columns: 1fr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 576px) {
+    .introduce {
+        height: 70px;
+    }
+    .introduce .title-name{
+        font-size: 25px;
+    }
+    .introduce .title-text {
+        font-size: 14px;
+    }
+   
+    .about .photo {
+        width: 100px;
+    }
+    .about h2 {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .about p{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .title-hero{
+        margin-bottom: 20px;
+    }
+    .painting-hero .hero h3{
+        font-size: 20px;
+    }
+    .painting-hero .hero p{
+        font-size: 14px;
+    }
+    .contacts{
+        background-image: none;
+    }
+    .social-network a {
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+   
+ }

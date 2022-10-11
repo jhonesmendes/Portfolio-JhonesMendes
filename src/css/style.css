@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,400;1,700&family=Outfit:wght@400;600;700&family=Source+Serif+Pro:wght@300;400;700&display=swap');
 
 body {
-    animation: stylergb 1s infinite;
+    height: 100%;
+    width: 100%;
     background: url(../images/Animação.gif);
     font-family: 'Source Serif Pro', serif;
+    animation: stylergb 1s infinite;
 }
 
 .heading-container {
@@ -16,11 +18,8 @@ body {
 }
 
 .introduce {
-    height: 420px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 350px;
+    margin-left: 100px;   
 }
 
 .introduce .title-name {
@@ -33,23 +32,17 @@ body {
     color: var(--cor-text-padrao);
 }
 
-.introduce img {
-    height: 500px;
-    width: 500px;
-    margin: 25px;
-}
-
 .about {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
 }
 
 .about .information {
     height: 550px;
     width: 600px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .about h2 {
@@ -57,6 +50,8 @@ body {
     font-size: 36px;
     color: var(--cor-text-padrao);
     animation: stylergb 1s infinite;
+    text-align: center;
+    border-radius: 15px 15px 0 0 ;
 }
 
 .about p {
@@ -65,20 +60,15 @@ body {
     line-height: 35px;
     text-align: justify;
     color: var(--cor-text-padrao);
+    border-radius: 0 0 15px 15px ;
     animation: stylergb 1s infinite;
 }
 
 .about .photo {
     height: 100%;
     width: 500px;
-
+    margin-right: 70px;
 }
-
-
-/*  habilidades ainda nao tenho ideia 
-    fazer efeito cascata para o lado tipo cod
-*/
-
 
 .title-hero{
     color: var(--cor-text-padrao);
@@ -96,9 +86,9 @@ body {
 }
 
 .painting-hero .hero{
-    height: 450px;
+    height: 350px;
     width: 300px;
-    border: 1px solid;
+    border-radius: 15px;
     animation: stylergb 3s infinite;
     text-align: center;
     padding: 15px;
@@ -120,31 +110,81 @@ body {
     color: var(--cor-text-padrao);
 }
 
-/*  projetos */
-
-.list-projects {
+.list-projects .quadro-projects{
     display:grid;
     grid-template-columns: repeat(2, 0fr);
     grid-template-rows: 1fr;
     justify-content: center;
+
 }
 
-.list-projects .projects{
+.list-projects .quadro-projects .projects{
     margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+ .quadro-projects .projects:hover,
+.list-projects .quadro-projects .projects:hover .projects-information{
+    opacity: 0.8;
+} 
+
+.list-projects .quadro-projects .projects a img{
+    height: 320px;
+    width: 400px;
+    border-radius: 15px;
+}
+.list-projects .quadro-projects .projects h3{
+    text-align: center;
+    font-size: 24px;
+
+}
+.list-projects .quadro-projects .projects .projects-information{
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    background-color:#0c0703;
+    color: var(--cor-text-padrao);
+    opacity: 0;
+    height: 320px;
+    max-width: 100%;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.list-projects .quadro-projects .projects .projects-information p{
+    font-size: 20px;
+    margin: 50px 0;
 }
 
 
-/* rodape  */
-
-.social-network {
+.contacts{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    flex-direction: column;
     width: 100%;
     height: 500px;
-    
+    background-image: url(../images/jhones-sem-fundo01.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
+.botao-curriculo{   
+    border-radius: 15px;
+    height: 60px;
+    padding: 15px;
+    animation: stylergb 1s infinite;
+    margin-bottom: 55px;
+}
+.botao-curriculo a:hover{
+    color: var(--cor-text-secudaria);
+}   
 .social-network a {
     padding: 25px;
     font-size: 50px;
