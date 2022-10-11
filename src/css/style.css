@@ -108,6 +108,7 @@ body {
 .painting-hero .hero p{
     font-size: 18px;
     color: var(--cor-text-padrao);
+    text-align: center;
 }
 
 .list-projects .quadro-projects{

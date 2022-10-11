@@ -76,8 +76,20 @@
     .painting-hero .hero p{
         font-size: 14px;
     }
+    
+    .list-projects .quadro-projects .projects a img{
+        height: 280px;
+        width: 280px;
+    }
+    .list-projects .quadro-projects .projects .projects-information{
+        height: 280px;
+        width: 280px;
+        border-radius: 15px;
+    }
+
     .contacts{
         background-image: none;
+      
     }
     .social-network a {
         font-size: 30px;
