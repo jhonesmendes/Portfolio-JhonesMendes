@@ -74,7 +74,7 @@ body {
     color: var(--cor-text-padrao);
     text-align: center;
     font-size: 30px;
-    margin: 75px 0 50px;
+    margin: 75px 0 70px;
 }
 .painting-hero{
     display: grid;
@@ -86,7 +86,7 @@ body {
 }
 
 .painting-hero .hero{
-    height: 350px;
+    height: 320px;
     width: 300px;
     border-radius: 15px;
     animation: stylergb 3s infinite;
@@ -100,7 +100,7 @@ body {
     color: var(--cor-text-padrao);
 }
 .painting-hero .hero h3{
-    font-size: 45px;
+    font-size: 25px;
     margin: 15px;
     color: var(--cor-text-padrao);
 }
@@ -115,7 +115,12 @@ body {
     grid-template-columns: repeat(2, 0fr);
     grid-template-rows: 1fr;
     justify-content: center;
+}
 
+.list-projects h2{
+    color: var(--cor-text-padrao);
+    text-align: center;
+    font-size: 30px;
 }
 
 .list-projects .quadro-projects .projects{
@@ -182,10 +187,13 @@ body {
     animation: stylergb 1s infinite;
     margin-bottom: 55px;
 }
-.botao-curriculo a:hover{
+.botao-curriculo a:hover, 
+.social-network a:hover{
     color: var(--cor-text-secudaria);
-}   
-.social-network a {
+} 
+
+.social-network a{
     padding: 25px;
     font-size: 50px;
+
 }
