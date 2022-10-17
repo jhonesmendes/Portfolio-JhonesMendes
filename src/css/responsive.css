@@ -47,17 +47,20 @@
 }
 @media (max-width: 576px) {
     .introduce {
-        height: 70px;
+        height: 70px; 
+        position: absolute;
     }
     .introduce .title-name{
-        font-size: 25px;
+        font-size: 30px;      
     }
     .introduce .title-text {
         font-size: 14px;
-    }
-   
+    }  
     .about .photo {
-        width: 100px;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 0 20px 180px ;
     }
     .about h2 {
         font-size: 15px;
