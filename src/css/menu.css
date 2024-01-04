@@ -23,7 +23,7 @@
 
 .heading-container .navegacao ul li a:hover {
     color: var(--cor-text-secudaria);
-    border: 1px solid white;
+    border: 1px solid rgb(244, 241, 241);
     border-radius: 10px;
     animation: stylergb 2s infinite;
 }

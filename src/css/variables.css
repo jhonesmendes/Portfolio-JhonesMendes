@@ -1,6 +1,9 @@
 :root{
-    --cor-text-padrao: #fff;
+    --cor-text-padrao: #000000;
     --cor-text-secudaria: rgb(30, 170, 235);
+    --cor-title-secudaria: rgb(18, 19, 19);
+    --cor-fundo-padrao: rgb(207, 207, 207);
+    --cor-fundo-secudaria:#afaeac00;
 }
 :root{
     --font-descricao: 17px;
